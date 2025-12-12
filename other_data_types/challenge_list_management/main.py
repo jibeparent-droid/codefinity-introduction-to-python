@@ -1,0 +1,13 @@
+meat = ["Ham",3.99,50,"Sliced"]
+cheese = ["Cheddar", 4.49,100,"Sharp"]
+condiment = ["Mustard",1.99,75,"Spicy"]
+deli_dept = [meat,cheese,condiment]
+print("Initial Deli List:",deli_dept)
+if 'Ham' in deli_dept[0] and deli_dept[0][2] <100:
+    deli_dept[0][2] =100
+seasonal_meat = ["Turkey",4.50,100,"Sliced"]
+deli_dept.append(seasonal_meat)
+deli_dept.remove(condiment)
+deli_dept.sort(key=lambda item: item[0])
+print("Updated Deli List:",deli_dept)
+
